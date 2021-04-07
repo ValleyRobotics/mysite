@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'mysite/css/styles.css' %}">
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Paul Sprouse" />
+        <title>Resume</title>
+        <link rel="icon" type="image/x-icon" href="{% static '/mysite/img/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'mysite/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Paul Sprouse</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static '/mysite/img/IMG_0409.jpg' %}" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills/Certifications</a></li>
+                    <li class="nav-item"><a href="{% url 'project_index' %}" class="nav-link js-scroll-trigger">Projects </a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Paul
+                        <span class="text-primary">Sprouse</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        North Bend, WA 98045 · (425) 221-9590 ·
+                        <a href="mailto:paul@valleyrobotics.com">paul@valleyrobotics.com</a>
+                    </div>
+                    <p class="lead mb-5">Data Science Professional with over 10 years of experience spanning across
+                        Finance, IT, and Management. Demonstrated ability to combine advanced statistical and analytical
+                        techniques with domain expertise to discover actionable insights and make impactful contributions.
+                        A team player who is highly motivated, detail-oriented, and continually seeking to learn new
+                        skills.<div class="social-icons">
+                        <a href="http://www.linkedin.com/in/paul-sprouse" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/ValleyRobotics" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="mailto:paul@valleyrobotics.com" class="social-icon"><i class="fa fa-envelope"></i></a>
+                    <a href="http://valleyrobotics.com" class="social-icon"><i class="fas fa-mobile"></i></a>
+                    </div>
+
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Comprehensive Immersive Hands-On Boot Camp</h3>
+                            <div class="subheading mb-3">NYC DATA SCIENCE ACADEMY</div>
+                            <p>❖	Hands-on learning in data EDA, data mangling, analysis, machine learning with SQL,
+                                R, Python, using Docker Environments, virtual environments and GitHub.</p>
+                            <p>❖	Demonstrated knowledge of Data Science Skills through  four major projects based on over
+                                600 hours of hands on learning, lectures, presentations and programming challenges.
+                                An example of one such project is this Python Dash Plotly Monti Carlo Simulation.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2020 - February 2021</span></div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Data Analytics 360 - 19 weeks - part time</h3>
+                            <div class="subheading mb-3">CORNELL UNIVERSITY</div>
+                            <p>❖	Understanding and Visualizing Data, Implementing Scientific Decision Making,
+                                Predictive Data Analysis, Uncertainty and Risk and Optimization and
+                                Modeling Simultaneous Decisions.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2018 - December 2018</span></div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Data Foundations</h3>
+                            <div class="subheading mb-3">UDACITY</div>
+                            <p>❖	Data Visualization, Dashboard Design with Excel and Tableau and Data Story Telling</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2018- July 2018</span></div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">STEM Teacher / Business Owner</h3>
+                            <div class="subheading mb-3">Valley Robotics</div>
+                            <p>❖	Taught, coached, mentored thousands of students, teachers, and first responders in
+                                STEM related fields including robotics, programming and drone technologies.	</p>
+                            <p>❖	Worked with Snoqualmie Valley School Super-Intendant to analyze math scores and
+                                make recommendations to improve math scores - over 45% improvements in controlled tests.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2008 - June 2018</span></div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">DATA / IT DEVELOPMENT CONSULTANT</h3>
+                            <div class="subheading mb-3">Akili Systems Group - Independent from 1/01 to 3/04</div>
+                            <p>❖	Operated within cross-functional environments, coordinating multi-disciplinary teams to
+                                avoid redundancy and reduce dependencies.</p>
+                            <p>❖	Developed dynamic model and deal loading systems allowing end users the ability to share
+                                across deals and to dynamically create new templates, deals without waiting on
+                                development cycle and programmers. Saving both time and money and increasing user experience.</p>
+
+                            <p>Authored detailed system requirements and implementation plans to meet business priorities,
+                                deadlines, and software testing goals.</p>
+                            <p>❖	Managed onsite personnel and liaised between multiple IT teams, end users and
+                                senior management.</p>
+                            <p>❖	Worked with Snoqualmie Valley School Super-Intendant to analyze math scores and
+                                make recommendations to improve math scores - over 45% improvements in controlled tests.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 1998 - March 2004</span></div>
+                    </div>
+
+                        <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Business Analyst / Test Lead</h3>
+                            <div class="subheading mb-3">BOEING</div>
+                            <p>❖	 Exercised critical thinking to find and resolve software errors in Accounting and
+                                Project Cost Systems.</p>
+                            <p>❖	Developed new AR reports in real time allowing accountants to spot problem areas
+                                quickly and to mitigate long delays keeping cashflow optimized and reducing ongoing
+                                AR by over 25%.	</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 1996 - September 1998</span></div>
+                    </div>
+
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Western Governors University</h3>
+                            <div class="subheading mb-3">MBA</div>
+                            <div>IT Management</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2008 - December 2010</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Seattle University</h3>
+                            <div class="subheading mb-3">Working on Masters of Applied Economics</div>
+                            <div>Applied Economics - moved to Houston before I could complete</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 1997 - October 1998</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Old Dominion University</h3>
+                            <div class="subheading mb-3">Bachelor of Science</div>
+                            <div>Finance</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 1990 - December 1995</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3"></div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-r-project"></i></li>
+                        <li class="list-inline-item"><img class="img-fluid img-profile " src="{% static '/mysite/img/Unknown.jpg' %}" width='80' height='80' alt=""/></li>
+                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                        <li class="list-inline-item"><img class="img-fluid img-profile " src="{% static '/mysite/img/tableau.png' %}" width='52' height='52' alt=""/></li>
+                        <li class="list-inline-item"><img class="img-fluid img-profile " src="{% static '/mysite/img/plotly.jpeg' %}" width='55' height='55' alt=""/></li>
+                        <li class="list-inline-item"><img class="img-fluid img-profile " src="{% static '/mysite/img/excel.png' %}" width='55' height='55' alt=""/></li>
+                        <li class="list-inline-item"><img class="img-fluid img-profile " src="{% static '/mysite/img/access.png' %}" width='55' height='55' alt=""/></li>
+
+
+                    </ul>
+                    <div class="subheading mb-3">Programming Tools</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Python
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            R
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            SQL
+                        </li>
+                                                <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            GitHub
+                        </li>
+                                               <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Dashboards: Dash Plotly / Tableau / Plotly
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            MS Office - Excell, Access, PowerPoint
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="subheading mb-3">Data Science Skills</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Statistical analysis
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Data Analysis
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Machine learning
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Data interpretation
+                        </li>
+                                                <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Statistical modeling
+                        </li>
+                                                <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Data Visualization
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Agile Development & Scrum
+                        </li>
+                    </ul>
+                    <br>
+                    <h2 class="mb-5">Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            CMBA - Certified Masters of Business Administration
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Cornell University Data Analytics 360
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Udacity Data Foundations
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            NYC Data Science Certification
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Rational Software Testing Certification
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+
+
+
+        <hr class="m-0" />
+
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src={% static 'mysite/js/scripts.js' %}></script>
+    </body>
+</html>
