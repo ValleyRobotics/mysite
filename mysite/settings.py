@@ -28,7 +28,7 @@ load_dotenv(os.path.join(BASEDIR, '.env'))
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'psprouse.pythonanywhere.com']
 
@@ -72,6 +72,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -128,6 +129,24 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+#
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/home/paulsprouse/mysite/static'
+STATICFILES_DIRS = (
+                os.path.join(BASE_DIR,'staticfiles'), # if your static files folder is named "staticfiles"
+)
+TEMPLATE_DIRS = (
+                os.path.join(BASE_DIR,'template'), # if your static files folder is named "template"
+)
+
+MEDIA_ROOT= os.path.join(BASE_DIR, 'media/')
+MEDIA_URL= "/media/"
+#
+
+#
+# STATIC_ROOT = '/home/paulsprouse/mysite/static/'
+# STATIC_URL = '/static/'
+#
+#
+#STATICFILES_DIRS = (os.path.join(BASE_DIR, "static-assets"), '/Users/paulsprouse/OneDrive/python/mysite')

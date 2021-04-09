@@ -1,7 +1,8 @@
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'mysite/css/styles.css' %}">
-
+<link rel="stylesheet" type="text/css" href="{% static '/mysite/css/styles.css' %}">
+<script type="text/javascript" src="{% static 'mysite/js/scripts.js' %}"></script>
+{#'mysite/css/styles.css' %}">#}
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -9,7 +10,7 @@
         <meta name="description" content="" />
         <meta name="author" content="Paul Sprouse" />
         <title>Resume</title>
-        <link rel="icon" type="image/x-icon" href="{% static '/mysite/img/favicon.ico' %}" />
+        <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
